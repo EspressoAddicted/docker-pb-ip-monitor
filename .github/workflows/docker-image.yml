@@ -14,10 +14,10 @@ jobs:
 
     steps:
     - name: Checkout
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     - name: Set up QEMU
-    - uses: docker/setup-qemu-action@v3
+      uses: docker/setup-qemu-action@v3
     - name: Set up Docker Buildx
-    - uses: docker/setup-buildx-action@v3
+      uses: docker/setup-buildx-action@v3
     - name: Build the Docker image
-    - run: docker buildx build . --file Dockerfile --platform linux/amd64 --platform linux/arm64 --tag pb-ip-monitor:$(date +%s)
+      run: docker buildx build . --file Dockerfile --platform linux/amd64 --platform linux/arm64 --tag pb-ip-monitor:$(date +%s)
