@@ -7,7 +7,7 @@ ADDRESS_LOGFILE=/address.log
 
 touch $ADDRESS_LOGFILE
 OLD_ADDR=$(cat $ADDRESS_LOGFILE)
-CUR_ADDR=$(curl -s ipconfig.io)
+CUR_ADDR=$(curl -s -6 ipconfig.io)
 
 NOTE_MESSAGE=${NOTE_MESSAGE:-"Change Warning! Old: $OLD_ADDR, New: $CUR_ADDR"}
 NOTE_TITLE=${NOTE_TITLE:-"IP Address Change"}
