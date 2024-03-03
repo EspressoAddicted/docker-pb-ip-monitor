@@ -1,5 +1,4 @@
 FROM alpine:latest
-MAINTAINER Eric McNiece <emcniece@gmail.com>
 
 RUN apk add --update \
         bash \

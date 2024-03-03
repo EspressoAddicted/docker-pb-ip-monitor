@@ -1,6 +1,6 @@
-# Creates a base image for emcniece/pb-ip-monitor
+# Creates a base image for EspressoAddicted/pb-ip-monitor
 
-NAMESPACE := emcniece
+NAMESPACE := EspressoAddicted
 PROJECT := pb-ip-monitor
 PLATFORM := linux
 ARCH := amd64
